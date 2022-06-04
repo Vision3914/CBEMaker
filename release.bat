@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 echo %date% Batch file has started
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-
+cls
 :main
 cls
 echo.
