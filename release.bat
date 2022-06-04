@@ -10,10 +10,10 @@ cls
 cls
 echo.
 echo.
-echo                  1) - Create CBE
+echo                   1) - Create CBE
 echo.
 echo.
-echo                  2) - Exit
+echo                   2) - Exit
 echo.
 echo.
 
