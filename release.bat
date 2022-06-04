@@ -19,7 +19,7 @@ echo.
 echo                3) - Exit
 echo.
 echo.
-madplay -Q ping.mp3
+
 set /p L6Q=#:
 if %L6Q%==1 goto CreateCBE
 if %L6Q%==2 goto Featured
@@ -31,7 +31,7 @@ echo %date% Batch file executed "CreateCBE", %username% has pressed 1.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
+
 cls
 echo Welcome to CBE Creator, What CBE do you want to create?
 echo.
@@ -52,18 +52,18 @@ echo %date% Batch file executed "BH", %username% has pressed 1.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity1=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname1=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -71,7 +71,7 @@ set /p Command1=Command:
 goto askbh
 
 :askbh
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -81,18 +81,18 @@ if %L62%==1 goto BH2
 if %L62%==2 goto BHBuild
 
 :BH2
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity2=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname2=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -100,7 +100,7 @@ set /p Command2=Command:
 goto askbh2
 
 :askbh2
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -110,18 +110,18 @@ if %L63%==1 goto BH3
 if %L63%==2 goto BHBuild
 
 :BH3
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity3=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname3=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -129,7 +129,7 @@ set /p Command3=Command:
 goto askbh3
 
 :askbh3
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -139,18 +139,18 @@ if %L64%==1 goto BH4
 if %L64%==2 goto BHBuild
 
 :BH4
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity4=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname4=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -158,7 +158,7 @@ set /p Command4=Command:
 goto askbh4
 
 :askbh4
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -168,18 +168,18 @@ if %L65%==1 goto BH5
 if %L65%==2 goto BHBuild
 
 :BH5
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity5=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname5=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -187,7 +187,7 @@ set /p Command5=Command:
 goto askbh5
 
 :askbh5
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -197,18 +197,18 @@ if %L66%==1 goto BH6
 if %L66%==2 goto BHBuild
 
 :BH6
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity6=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname6=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -216,7 +216,7 @@ set /p Command6=Command:
 goto askbh6
 
 :askbh6
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -226,18 +226,18 @@ if %L67%==1 goto BH7
 if %L67%==2 goto BHBuild
 
 :BH7
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity7=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname7=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -245,7 +245,7 @@ set /p Command7=Command:
 goto askbh7
 
 :askbh7
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -255,18 +255,18 @@ if %L68%==1 goto BH8
 if %L68%==2 goto BHBuild
 
 :BH8
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity8=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname8=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -274,7 +274,7 @@ set /p Command8=Command:
 goto askbh8
 
 :askbh8
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -284,18 +284,18 @@ if %L69%==1 goto BH9
 if %L69%==2 goto BHBuild
 
 :BH9
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity9=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname9=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -303,7 +303,7 @@ set /p Command9=Command:
 goto askbh9
 
 :askbh9
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add one more command, or build the CBE?
 echo 1) Yes
@@ -313,18 +313,18 @@ if %L70%==1 goto BH10
 if %L70%==2 goto BHBuild
 
 :BH10
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity10=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname10=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -337,7 +337,7 @@ echo %date% Batch file has started building BH CBE.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
+
 cls
 echo Building Beehive
 cls
@@ -389,7 +389,7 @@ echo Building Beehive..
 cls
 echo Building Beehive...
 cls
-madplay -Q ping.mp3
+
 (
 echo %date% Batch file has finshed building BH CBE without any errors.
 )>log%username%.txt
@@ -405,18 +405,18 @@ echo %date% Batch file executed "BN", %username% has pressed 2.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity1=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname1=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -424,7 +424,7 @@ set /p Command1=Command:
 goto askbn
 
 :askbn
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -434,18 +434,18 @@ if %L62%==1 goto BN2
 if %L62%==2 goto BNBuild
 
 :BN2
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity2=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname2=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -453,7 +453,7 @@ set /p Command2=Command:
 goto askbn2
 
 :askbn2
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -463,18 +463,18 @@ if %L63%==1 goto BN3
 if %L63%==2 goto BNBuild
 
 :BN3
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity3=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname3=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -482,7 +482,7 @@ set /p Command3=Command:
 goto askbn3
 
 :askbn3
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -492,18 +492,18 @@ if %L64%==1 goto BN4
 if %L64%==2 goto BNBuild
 
 :BN4
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity4=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname4=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -511,7 +511,7 @@ set /p Command4=Command:
 goto askbn4
 
 :askbn4
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -521,18 +521,18 @@ if %L65%==1 goto BN5
 if %L65%==2 goto BNBuild
 
 :BN5
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity5=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname5=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -540,7 +540,7 @@ set /p Command5=Command:
 goto askbn5
 
 :askbn5
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -550,18 +550,18 @@ if %L66%==1 goto BN6
 if %L66%==2 goto BNBuild
 
 :BN6
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity6=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname6=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -569,7 +569,7 @@ set /p Command6=Command:
 goto askbn6
 
 :askbn6
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -579,18 +579,18 @@ if %L67%==1 goto BN7
 if %L67%==2 goto BNBuild
 
 :BN7
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity7=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname7=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -598,7 +598,7 @@ set /p Command7=Command:
 goto askbn7
 
 :askbn7
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -608,18 +608,18 @@ if %L68%==1 goto BN8
 if %L68%==2 goto BNBuild
 
 :BN8
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity8=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname8=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -627,7 +627,7 @@ set /p Command8=Command:
 goto askbn8
 
 :askbn8
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -637,18 +637,18 @@ if %L69%==1 goto BN9
 if %L69%==2 goto BNBuild
 
 :BN9
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity9=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname9=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -656,7 +656,7 @@ set /p Command9=Command:
 goto askbn9
 
 :askbn9
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add one more command, or build the CBE?
 echo 1) Yes
@@ -666,18 +666,18 @@ if %L70%==1 goto BN10
 if %L70%==2 goto BNBuild
 
 :BN10
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity10=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname10=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -690,7 +690,7 @@ echo %date% Batch file has started building the BN CBE.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
+
 cls
 echo Building Beenest
 cls
@@ -742,7 +742,7 @@ echo Building Beenest..
 cls
 echo Building Beenest...
 cls
-madplay -Q ping.mp3
+
 (
 echo %date% Batch file has finshed building BH CBE without any errors.
 )>log%username%.txt
@@ -758,18 +758,18 @@ echo %date% Batch file executed "MB", %username% has pressed 3.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity1=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname1=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -777,7 +777,7 @@ set /p Command1=Command:
 goto askmb
 
 :askmb
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -787,18 +787,18 @@ if %L62%==1 goto MB2
 if %L62%==2 goto MBBuild
 
 :MB2
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity2=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname2=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -806,7 +806,7 @@ set /p Command2=Command:
 goto askmb2
 
 :askmb2
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -816,18 +816,18 @@ if %L63%==1 goto MB3
 if %L63%==2 goto MBBuild
 
 :MB3
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity3=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname3=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -835,7 +835,7 @@ set /p Command3=Command:
 goto askmb3
 
 :askmb3
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -845,18 +845,18 @@ if %L64%==1 goto MB4
 if %L64%==2 goto MBBuild
 
 :MB4
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity4=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname4=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -864,7 +864,7 @@ set /p Command4=Command:
 goto askmb4
 
 :askmb4
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -874,18 +874,18 @@ if %L65%==1 goto MB5
 if %L65%==2 goto MBBuild
 
 :MB5
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity5=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname5=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -893,7 +893,7 @@ set /p Command5=Command:
 goto askmb5
 
 :askmb5
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -903,18 +903,18 @@ if %L66%==1 goto MB6
 if %L66%==2 goto MBBuild
 
 :MB6
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity6=Entity:
-madplay -Q ping.mp3
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname6=Name:
-madplay -Q ping.mp3
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -922,7 +922,7 @@ set /p Command6=Command:
 goto askmb6
 
 :askmb6
-madplay -Q ping.mp3
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -932,18 +932,16 @@ if %L67%==1 goto MB7
 if %L67%==2 goto MBBuild
 
 :MB7
-madplay -Q ping.mp3
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity7=Entity:
-madplay -Q ping.mp3
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname7=Name:
-madplay -Q ping.mp3
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -951,7 +949,6 @@ set /p Command7=Command:
 goto askmb7
 
 :askmb7
-madplay -Q ping.mp3
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -959,20 +956,16 @@ echo 2) Build CBE
 set /p L68=#:
 if %L68%==1 goto MB8
 if %L68%==2 goto MBBuild
-
 :MB8
-madplay -Q ping.mp3
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity8=Entity:
-madplay -Q ping.mp3
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname8=Name:
-madplay -Q ping.mp3
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -980,7 +973,6 @@ set /p Command8=Command:
 goto askmb8
 
 :askmb8
-madplay -Q ping.mp3
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -990,18 +982,15 @@ if %L69%==1 goto MB9
 if %L69%==2 goto MBBuild
 
 :MB9
-madplay -Q ping.mp3
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity9=Entity:
-madplay -Q ping.mp3
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname9=Name:
-madplay -Q ping.mp3
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -1009,7 +998,6 @@ set /p Command9=Command:
 goto askmb9
 
 :askmb9
-madplay -Q ping.mp3
 cls
 echo Do you want to add one more command, or build the CBE?
 echo 1) Yes
@@ -1019,18 +1007,15 @@ if %L70%==1 goto MB10
 if %L70%==2 goto MBBuild
 
 :MB10
-madplay -Q ping.mp3
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity10=Entity:
-madplay -Q ping.mp3
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname10=Name:
-madplay -Q ping.mp3
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -1043,7 +1028,6 @@ echo %date% Batch file has started building the MB CBE.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
 cls
 echo Building MovingBlock
 cls
@@ -1103,7 +1087,6 @@ echo %date% Batch file has finshed building MB CBE without any errors.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
-madplay -Q ping.mp3
 echo MovingBlock CBE has been written!
 pause
 goto Main
@@ -1118,5 +1101,4 @@ echo Okay! (Press Enter to Exit this menu.)
 pause >nul
 goto main
 :exit
-madplay -Q ping.mp3
 exit
