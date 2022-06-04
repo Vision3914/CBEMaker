@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableDelayedExpansion
-@Mode 55,14
+@Mode 56,9
 (
 echo %date% Batch file has started
 )>log%username%.txt
@@ -10,20 +10,16 @@ cls
 cls
 echo.
 echo.
-echo                1) - Create CBE
+echo                  1) - Create CBE
 echo.
 echo.
-echo                2) - Featured NBT/CBE Creations
-echo.
-echo.
-echo                3) - Exit
+echo                  2) - Exit
 echo.
 echo.
 
 set /p L6Q=#:
 if %L6Q%==1 goto CreateCBE
-if %L6Q%==2 goto Featured
-if %L6Q%==3 goto Exit
+if %L6Q%==2 goto Exit
 
 :CreateCBE
 (
@@ -938,10 +934,12 @@ echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity7=Entity:
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname7=Name:
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -949,6 +947,7 @@ set /p Command7=Command:
 goto askmb7
 
 :askmb7
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -956,16 +955,20 @@ echo 2) Build CBE
 set /p L68=#:
 if %L68%==1 goto MB8
 if %L68%==2 goto MBBuild
+
 :MB8
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity8=Entity:
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname8=Name:
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -973,6 +976,7 @@ set /p Command8=Command:
 goto askmb8
 
 :askmb8
+
 cls
 echo Do you want to add more commands, or build the CBE?
 echo 1) Yes
@@ -982,15 +986,18 @@ if %L69%==1 goto MB9
 if %L69%==2 goto MBBuild
 
 :MB9
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity9=Entity:
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname9=Name:
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -998,6 +1005,7 @@ set /p Command9=Command:
 goto askmb9
 
 :askmb9
+
 cls
 echo Do you want to add one more command, or build the CBE?
 echo 1) Yes
@@ -1007,15 +1015,18 @@ if %L70%==1 goto MB10
 if %L70%==2 goto MBBuild
 
 :MB10
+
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
 echo You don't have to put the minecraft: part.
 set /p Entity10=Entity:
+
 cls
 echo What Entity Name do you want it to be?
 echo It's up to you, you can't skip any steps.
 set /p customname10=Name:
+
 cls
 echo What Command do you want it to run?
 echo It's up to you, you can't skip any steps.
@@ -1028,6 +1039,7 @@ echo %date% Batch file has started building the MB CBE.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
+
 cls
 echo Building MovingBlock
 cls
@@ -1087,18 +1099,9 @@ echo %date% Batch file has finshed building MB CBE without any errors.
 )>log%username%.txt
 move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
 cls
+
 echo MovingBlock CBE has been written!
 pause
 goto Main
-:Featured
-cls
-echo.
-echo Page 1/1
-echo.
-echo Hey, we're still working on this!
-echo.
-echo Okay! (Press Enter to Exit this menu.)
-pause >nul
-goto main
 :exit
 exit
