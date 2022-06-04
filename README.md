@@ -1,5 +1,9 @@
 # CBEMaker
 
-CBEMaker is for Horion and built off of Batch
+CBEMaker is a Batch software which you can make CBE(s) with!
 
-goofy ahh kids these days too lazy to write their code so they use this
+# Is it Supported for Horion?
+Yes
+
+# Is it Supported for Toolbox?
+No, Not yet.
