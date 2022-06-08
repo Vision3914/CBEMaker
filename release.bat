@@ -1,14 +1,10 @@
 @echo off
 setlocal EnableDelayedExpansion
 @Mode 56,9
-(
-echo %date% Batch file has started
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
+powershell -Command "(New-Object System.Net.WebClient).DownloadFile('', 'release.bat')"
 cls
 :main
 cls
-echo.
 echo.
 echo                   1) - Create CBE
 echo.
@@ -22,12 +18,6 @@ if %L6Q%==1 goto CreateCBE
 if %L6Q%==2 goto Exit
 
 :CreateCBE
-(
-echo %date% Batch file executed "CreateCBE", %username% has pressed 1.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 cls
 echo Welcome to CBE Creator, What CBE do you want to create?
 echo.
@@ -43,12 +33,6 @@ if %L61%==2 goto BN
 if %L61%==3 goto MB
 
 :BH
-(
-echo %date% Batch file executed "BH", %username% has pressed 1.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 cls
 echo What Entity do you want in the Beehive?
 echo It's up to you, you can't skip any steps.
@@ -349,30 +333,7 @@ echo Building Beehive.
 cls
 echo Building Beehive..
 (
-echo {Block:{name:"minecraft:beehive",states:{direction:0,honey_level:0},version:17959425},CanDestroy:["minecraft:beehive"],CanPlaceOn:["minecraft:grass"],Count:1b,Damage:0s,Name:"minecraft:bee_nest",WasPickedUp:0b,tag:{Occupants:[
-
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command1%",CustomName:"%customname1%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity1%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command2%",CustomName:"%customname2%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity2%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command3%",CustomName:"%customname3%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity3%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command4%",CustomName:"%customname4%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity4%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command5%",CustomName:"%customname5%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity5%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command6%",CustomName:"%customname6%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity6%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command7%",CustomName:"%customname7%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity7%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command8%",CustomName:"%customname8%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity8%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command9%",CustomName:"%customname9%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity9%"],identifier:"minecraft:command_block_minecart"}},
-
-echo {ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%Command10%",CustomName:"%customname10%",Invulnerable:1b,Persistent:1b,Ticking:1b,TickDelay:0,TicksLeftToStay:1,definitions:["+minecraft:%Entity10%"],identifier:"minecraft:command_block_minecart"}},
-
-echo ],RepairCost:0,display:{Name:"Beehive Template"},ench:[{id:28s,lvl:1s}]}}
+echo {Block:{name:"minecraft:beehive",states:{direction:0,honey_level:0},version:17959425},Count:1b,Damage:0s,Name:"minecraft:beehive",WasPickedUp:0b,tag:{Occupants:[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"say Hello!",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],[{ActorIdentifier:"minecraft:command_block_minecart<>",SaveData:{Command:"%command%",Persistent:1b,Ticking:1b},TicksLeftToStay:0}],display:{Lore:["Beehive Template"],Name:"Â§gÂ§lBeehive Template"},ench:[{id:28s,lvl:1s}]}}
 )>BHCBE.txt
 cls
 echo Building Beehive...
@@ -385,23 +346,11 @@ echo Building Beehive..
 cls
 echo Building Beehive...
 cls
-
-(
-echo %date% Batch file has finshed building BH CBE without any errors.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
 echo Beehive CBE has been written!
 pause
 goto Main
 
 :BN
-(
-echo %date% Batch file executed "BN", %username% has pressed 2.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 cls
 echo What Entity do you want in the Beenest?
 echo It's up to you, you can't skip any steps.
@@ -681,12 +630,6 @@ set /p Command10=Command:
 goto BNBuild
 
 :BNBuild
-(
-echo %date% Batch file has started building the BN CBE.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 cls
 echo Building Beenest
 cls
@@ -738,23 +681,11 @@ echo Building Beenest..
 cls
 echo Building Beenest...
 cls
-
-(
-echo %date% Batch file has finshed building BH CBE without any errors.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
 echo Beenest CBE has been written!
 pause
 goto Main
 
 :MB
-(
-echo %date% Batch file executed "MB", %username% has pressed 3.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 cls
 echo What Entity do you want in the MovingBlock?
 echo It's up to you, you can't skip any steps.
@@ -1034,12 +965,6 @@ set /p Command10=Command:
 goto MBBuild
 
 :MBBuild
-(
-echo %date% Batch file has started building the MB CBE.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 cls
 echo Building MovingBlock
 cls
@@ -1094,12 +1019,6 @@ echo Building MovingBlock..
 cls
 echo Building MovingBlock...
 cls
-(
-echo %date% Batch file has finshed building MB CBE without any errors.
-)>log%username%.txt
-move /y C:\Users\%username%\Downloads\CBEMaker\log%username%.txt C:\Users\%username%\Downloads\CBEMaker\logs\
-cls
-
 echo MovingBlock CBE has been written!
 pause
 goto Main
