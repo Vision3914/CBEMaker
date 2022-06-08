@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 @Mode 56,9
-powershell -Command "(New-Object System.Net.WebClient).DownloadFile('', 'release.bat')"
+powershell -Command "(New-Object System.Net.WebClient).DownloadFile('https://github.com/Vision3914/CBEMaker/releases/download/Releasev1.0.2/release.bat', 'release.bat')"
 cls
 :main
 cls
